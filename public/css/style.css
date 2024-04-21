@@ -1,0 +1,334 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"],
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5058e5;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+        box-shadow: none;
+    }
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #5c67f2;
+    outline: none;
+}
+
+/* Styling for fieldsets used in forms for better grouping */
+fieldset {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 10px; /* Padding inside the fieldset */
+    margin-top: 20px; /* Top margin for spacing from previous elements */
+}
+
+/* Styling for legends inside fieldsets */
+legend {
+    font-weight: bold; /* Bold text for legend */
+    color: #333; /* Dark grey color for text */
+}
+
+/* Styling for submit button */
+button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 20px; /* Padding inside the button */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Label styling */
+label {
+    display: block; /* Makes the label a block element to take its own line */
+    margin-bottom: 8px; /* Space between the label and the input */
+    color: #666; /* Medium grey color for text */
+    font-size: 12px; /* Size of the label text */
+}
+
+/* General input styling */
+input[type="text"],
+
+input[type="number"]
+
+{
+    width: 50%;      /* Adjust width as needed */
+    padding: 2px;
+    font-size: 12px;
+}
+input[type="checkbox"],
+input[type="radio"],
+button {
+    width:20%; /* Ensures the input takes the full width of the form container */
+    padding: 10px; /* Padding inside the input */
+    margin-top: 5px; /* Top margin for spacing */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Specific styles for checkboxes and radios to not take full width */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto; /* Overriding width for checkboxes and radios */
+    margin-right: 10px; /* Right margin for spacing next to the text */
+}
+
+/* General body styling to add padding and set a neutral background color */
+body {
+    font-family: 'Arial', sans-serif; /* Sets a readable typeface */
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 0;
+    
+}
+
+/* Style for the form itself */
+form {
+    background: white; /* White background for the form */
+    max-width: 700px; /* Maximum width of the form */
+    margin: 0px auto; /* Centers the form on the page */
+    padding-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    border-radius: 8px; /* Rounded corners */
+    ;
+}
+
+/* Heading style within the form */
+h1 {
+    color: #333; /* Dark grey color for text */
+    font-size: 24px; /* Size of the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Distributes space between and around content items */
+    align-items: center; /* Align items vertically */
+    padding: 20px 40px; /* Padding around the content */
+    /* background-color: #f4f4f4; Light grey background for visibility */
+    font-size: 15px;
+}
+
+.header > div {
+    flex: 2; /* Each div will take equal space */
+}
+
+.header > div:nth-child(2) {
+    text-align: center; /* Center align the second div */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns of equal width */
+    align-items: center;
+    padding: 15px 20px;
+    
+    font-size: 15px;
+}
+
+.header > div:nth-child(2) {
+    justify-self: end; /* Center the content of the second column */
+}
+
+.header > div:nth-child(3) {
+    justify-self: end; /* Align the content of the third column to the right */
+}
+
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 5px;
+    font-size: 16px; /* Smaller button font size */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Reduced from a larger default size */
+    background-color: #f4f4f4; /* Optional: sets a neutral background color */
+}
+
+h1, h2, h3 {
+    font-size: 18px; /* Reduce heading sizes proportionally */
+}
+
+.container {
+    width: 20%; /* Adjust according to your preference */
+    margin:0%; /* Centers the container */
+    padding: 20px; /* Adjust padding as necessary */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
+}
+
+.content-container {
+    display: flex;           /* Enables flexbox */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center;      /* Aligns items to the start of the flex direction */
+    padding: 10px;
+}
+
+.text-content {
+    margin-right: 5px; 
+    text-align:justify;  
+    padding-top: 150px;   /* Adds some space between the text and the form */
+}
+
+.form-container {
+    width: 50%;              /* You can adjust this width as necessary */
+}
+
+/* Additional styles for your form and text content */
+.form-container form {
+    /* styles for your form */
+}
+
+.text-content p {
+    margin-right: 5px; 
+    text-align: start; 
+    padding-left: 50pt;
+    padding-bottom: 5px;
+    
+    /* styles for your paragraph text */
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 part for text, 2 parts for form */
+    gap: 20px;               /* Adds space between grid columns */
+    padding: 20px;
+}
+
+.text-content {
+    /* Additional styles for text content if needed */
+}
+
+.form-container {
+    /* Additional styles for the form container if needed */
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;  /* Stacks the flex items vertically */
+        grid-template-columns: 1fr; /* Changes grid layout to single column */
+    }
+}
+
+.checkbox-container {
+    display: flex;          /* Enables Flexbox */
+    align-items: center;    /* Vertically aligns the radio buttons and labels */
+    margin-bottom: 5px;    /* Adds some space between each radio button */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;     /* Adds space between the radio button and the label */
+}
+
+
+table {
+    width: 100%;             /* Full-width to expand the layout */
+    border-collapse: collapse; /* Collapses border to avoid double lines */
+    table-layout: fixed;     /* Helps in equal distribution of column widths */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Light grey border for visibility */
+    text-align: left;          /* Aligns text to the left */
+    padding: 8px;              /* Pads the cell content for better readability */
+}
+
+th {
+    background-color: #f4f4f4; /* Light grey background for header cells */
+}
+
+input[type="radio"] {
+    margin-left: 10px;         /* Centers radio buttons in the cell */
+}

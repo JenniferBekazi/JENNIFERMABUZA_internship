@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title> 
+</head>
+<body>
+    <div class="header">
+        <div>_Surveys</div>
+        <a href="/">FILL OUT SURVEY</a
+        <div> VIEW SURVEY RESULTS</div>
+         
+    </div>
+    <div class="text-content">
+    <% if (dataAvailable) { %>
+        <p>Total numbers of surveys : <%= totalSurveys %></p>
+        <p>Average Age : <%= averageAge.toFixed(1) %></p>
+        <p>Oldest person who participated in survey : <%= oldest %></p>
+        <p>Youngest person who participated in survey : <%= youngest %></p>
+        <p>Percentage of people who like Pizza : <%= percentageLikesPizza.toFixed(1) %> %</p>
+        <p>Percentage of people who like Pasta : <%= percentageLikesPasta.toFixed(1) %> %</p>
+        <p>Percentage of people who like Pap and Worse : <%= percentageLikesPapWors.toFixed(1) %> %</p>
+        <p>People who like to watch movies : <%= averageRatingMovies.toFixed(1) %> %</p>
+        <p>People who like to listen to radio : <%= averageRatingRadio.toFixed(1) %> %</p>
+        <p>People who like to eat out : <%= averageRatingEatOut.toFixed(1) %> %</p>
+        <p>People who like to watch TV : <%= averageRatingTV.toFixed(1) %> %</p>
+    <% } else { %>
+        <p>No Surveys Available.</p>
+    <% } %>
+    </div>
+   
+</body>
+</html>
